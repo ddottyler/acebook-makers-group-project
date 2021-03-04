@@ -1,4 +1,5 @@
 <main class="mdl-layout__content">
+
   <div class="mdl-layout__tab-panel is-active" id="overview">
 
     <% @posts.each do |post| %>
@@ -7,7 +8,7 @@
         <div class="mdl-card mdl-cell mdl-cell--12-col">
           <div class="mdl-card__supporting-text">
             <h5 style="margin-top: 0"><%= User.find(post.user_id).first_name %></h5>
-            <%= post.message %>
+            <%= post.message.gsub(/\n/, '<br/>').html_safe %>
           </div>
 
           <div class="mdl-card__actions" style="display: flex; justify-content: space-between">
