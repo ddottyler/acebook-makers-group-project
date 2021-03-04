@@ -29,7 +29,13 @@ jobs:
           name: Which bundler?
           command: bundle -v
       - run:
-          name: RSpec tests
+          name: Run bundle
+          command: bundle install
+      - run:
+          name: Which RSpec?
+          command: rspec -v
+      - run:
+          name: Run RSpec tests
           command: rspec
       # - ruby/bundle-install
       # - ruby/rspec
