@@ -14,14 +14,15 @@ jobs:
       # - image: cimg/node:14.10.1
       - image: cimg/ruby:2.7.2-node # the primary container, where your job's commands are run
 
-# What does this executor do?
-    executor: ruby/default
+    # What does this executor do?
+    executor:
+      ruby/default
 
-
-        # auth:
-        #   username: mydockerhub-user
-        #   password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
+      # auth:
+      #   username: mydockerhub-user
+      #   password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
 
     steps:
       - checkout # check out the code in the project directory
       - run: echo "hello world" # run the `echo` command
+      - rspec-test
