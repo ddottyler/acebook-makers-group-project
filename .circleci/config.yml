@@ -1,7 +1,5 @@
 version: 2.1
 
-# Orbs go here
-
 # If you do not already have Pipelines enabled, you'll need to go to Project Settings -> Advanced Settings and turn it on.
 
 orbs:
@@ -12,30 +10,18 @@ jobs:
   install-deps:
   build:
     docker:
-      # - image: cimg/node:14.10.1
       - image: cimg/ruby:2.7.2-node # the primary container, where your job's commands are run
 
-    # What does this executor do?
     executor:
       ruby/default
 
-      # auth:
-      #   username: mydockerhub-user
-      #   password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
-
     steps:
-      - checkout # check out the code in the project directory
+      - checkout
       - run:
-          name: Which bundler?
-          command: bundle -v
+          name: Run Bundler
+          command: bundle
       - run:
-          name: Run bundle
-          command: bundle install
-      - run:
-          name: Which RSpec?
-          command: rspec -v
-      - run:
-          name: Run RSpec tests
+          name: Run RSpec
           command: rspec
       # - ruby/bundle-install
       # - ruby/rspec
