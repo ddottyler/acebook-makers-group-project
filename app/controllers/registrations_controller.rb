@@ -9,9 +9,9 @@ class RegistrationsController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       session[:user_id] = @user.id
-      redirect_to root_path, notice: 'Sign in successful'
+      redirect_to root_path, notice: 'Sign up successful'
     else
-      # flash[:alert] = "Something went wrong. Please try again!"
+      flash[:alert] = "Something went wrong. Please try again!"
       render :new
     end
   end
