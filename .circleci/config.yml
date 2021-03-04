@@ -29,3 +29,5 @@ jobs:
           command: bundle -v
       - ruby/bundle-install
       - ruby/rspec
+
+  install-deps:
