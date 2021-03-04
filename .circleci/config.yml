@@ -9,6 +9,7 @@ orbs:
   heroku: circleci/heroku@1.2.5
 
 jobs:
+  install-deps:
   build:
     docker:
       # - image: cimg/node:14.10.1
@@ -27,7 +28,5 @@ jobs:
       - run:
           name: Which bundler?
           command: bundle -v
-      - ruby/bundle-install
-      - ruby/rspec
-
-  install-deps:
+      # - ruby/bundle-install
+      # - ruby/rspec
