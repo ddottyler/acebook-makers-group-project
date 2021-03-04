@@ -24,5 +24,8 @@ jobs:
 
     steps:
       - checkout # check out the code in the project directory
-      - run: echo "hello world" # run the `echo` command
-      - rspec-test
+      - run:
+          name: Which bundler?
+          command: bundle -v
+      - ruby/bundle-install
+      - ruby/rspec
