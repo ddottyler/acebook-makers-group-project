@@ -7,14 +7,14 @@
   display: flex;
 }
 
-#contact{
+#contact {
   display: flex;
 }
 
 .demo-card-wide > .mdl-card__title {
   color: #fff;
   height: 64px;
-  background-color: indigo;
+  /* background-color: indigo; */
 }
 
 .mdl-card__title-text {
