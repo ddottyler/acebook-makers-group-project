@@ -45,6 +45,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'simplecov'
   gem 'simplecov-console'
+  gem 'rspec_junit_formatter'
 end
 
 group :development do
