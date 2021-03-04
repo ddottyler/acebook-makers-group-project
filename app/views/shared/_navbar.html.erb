@@ -1,4 +1,4 @@
-<header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+<header class="mdl-layout__header mdl-layout--header-fixed mdl-color--primary">
   <div class="mdl-layout--large-screen-only mdl-layout__header-row">
     <h3><%= link_to "ace8ook", root_path %></h3>
   </div>
@@ -14,12 +14,7 @@
       <%= link_to "Log In", sign_in_path, class: "mdl-layout__tab" %>
     <% end %>
 
-   <%= link_to new_post_path do %>
-        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
-          <i class="material-icons" role="presentation">add</i>
-          <span class="visuallyhidden">Add</span>
-        </button>
-    <% end %>
+
 
   </div>
 </header>

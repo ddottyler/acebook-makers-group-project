@@ -14,8 +14,6 @@
  * limitations under the License.
  */
 
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
-
 html,
 body {
   font-family: "Roboto", "Helvetica", sans-serif;
@@ -247,6 +245,7 @@ body {
   margin-bottom: 1rem;
   border: 1px solid transparent;
   border-radius: 0.25rem;
+  text-align: center;
 }
 
 .message-success {
@@ -258,4 +257,19 @@ body {
   margin-bottom: 1rem;
   border: 1px solid transparent;
   border-radius: 0.25rem;
+  -webkit-animation: msg-gone 4s forwards;
+  animation: msg-gone 4s forwards;
+  text-align: center;
+}
+
+@keyframes msg-gone {
+  0% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
 }
