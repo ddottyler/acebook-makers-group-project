@@ -80,64 +80,41 @@
 - Troubleshot Heroku start issues.
 - Split into Posts, Heroku and User working groups.
 - Important commands for heroku debugging:
-`heroku pg:reset --app hemo-acebook`
-`heroku run rake db:schema:load --app hemo-acebook`
-`heroku run rake db:migrate --app hemo-acebook`
+  `heroku pg:reset --app hemo-acebook`
+  `heroku run rake db:schema:load --app hemo-acebook`
+  `heroku run rake db:migrate --app hemo-acebook`
 
 ## 1 March 2021
+
 ### Morning
+
 - Kicked off the morning session with a GitHub merge to consolidate branches and prepare for the week's development.
 - Investigated circleci CI/CD framework
 
 ### Afternoon
+
 - Split into two groups. First one focused on setting up circleCI integration with our project. Currently running...
 - Second group focused on linking a post to a user. Updated schema and created addition db:migrate file for posts.
 
 ## 2 March 2021
+
 ### Morning
+
 - Discussed order of work prior to and after the sprint review later this morning.
 - Agreed prioritisation of tests (including confirmation of CircleCI configuration) for this morning's work, and CRUD/CSS functionality for the afternoon.
 
 ### Afternoon
+
 - Agreed that RSpec is not as big a priority as CRUD and CSS functionality for the initial demonstration.
 - Resolved to spend the afternoon working on prioritised development.
 - Agreed to work with Material Design Light.
 
+## 4 March 2021
 
+### Morning
 
-### Key Learnings 
-Technologies used 
-- MDL 
+- Split into two teams to work on CI/CD and CRUDS
 
-The Good
-- Feel like we've gained good perspective and understanding on how to use Ruby on Rails. 
-- Team management was good, everyone had an opportunity to lead, scribe and contribute.
-- Regularly updating the documenting_learning.md was helpful for reflecting and helped with end of day retros/takeaways
-- GitHub, good planning avoided any merging nightmares
-- Planned the division of labour well and avoided tredding on toes by good prioritising
-- We used the trello board well to plan and organise
+### Afternoon
 
-- Planning was good. Wireframing on figma. Helpful but then we didn't refer to it. Could we have used this more throughout the process? If not, was it needed?
-
-The Bad/to improve
-- Testing - requests/controller tests
-- Didn't split from being a group of 5 until Friday (too many cooks at times) and could have done this earlier in hindsight 
-- Got hit by some big blockers. Not anyone's fault, but they slowed us down.
-- Perhaps too reliant on GoRails videos for learning and progression in the early stages. Could have taken advantage of other tools like devise and our own trial and error.
-- It was good to experiment with a different css framework, but we may have saved time with bootstrap. 
-
-
-### The Demo run through 
-- Home page (show them round)
-  - The posts 
-  - The navbar
-  - The new posts button - demo that you need to be signed in to use. 
-- Sign up 
-  - do a failed sign up 
-  - then sign in correctly (note the super duper flash note)
-- New post 
-- Home page
-  - demo edit/delete button that only shows when logged in
-  - use edit (maybe with line breaks) and then delete it
-- Log out
-- About page (show them round)
+- Split into two teams to work on CSS / fixing up pages and testing/CircleCI.
