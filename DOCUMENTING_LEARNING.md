@@ -118,3 +118,40 @@
 ### Afternoon
 
 - Split into two teams to work on CSS / fixing up pages and testing/CircleCI.
+
+### Key Learnings 
+Technologies used 
+- MDL 
+
+The Good
+- Feel like we've gained good perspective and understanding on how to use Ruby on Rails. 
+- Team management was good, everyone had an opportunity to lead, scribe and contribute.
+- Regularly updating the documenting_learning.md was helpful for reflecting and helped with end of day retros/takeaways
+- GitHub, good planning avoided any merging nightmares
+- Planned the division of labour well and avoided tredding on toes by good prioritising
+- We used the trello board well to plan and organise
+
+- Planning was good. Wireframing on figma. Helpful but then we didn't refer to it. Could we have used this more throughout the process? If not, was it needed?
+
+The Bad/to improve
+- Testing - requests/controller tests
+- Didn't split from being a group of 5 until Friday (too many cooks at times) and could have done this earlier in hindsight 
+- Got hit by some big blockers. Not anyone's fault, but they slowed us down.
+- Perhaps too reliant on GoRails videos for learning and progression in the early stages. Could have taken advantage of other tools like devise and our own trial and error.
+- It was good to experiment with a different css framework, but we may have saved time with bootstrap. 
+
+
+### The Demo run through 
+- Home page (show them round)
+  - The posts 
+  - The navbar
+  - The new posts button - demo that you need to be signed in to use. 
+- Sign up 
+  - do a failed sign up 
+  - then sign in correctly (note the super duper flash note)
+- New post 
+- Home page
+  - demo edit/delete button that only shows when logged in
+  - use edit (maybe with line breaks) and then delete it
+- Log out
+- About page (show them round)
