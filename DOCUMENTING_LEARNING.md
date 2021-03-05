@@ -80,25 +80,41 @@
 - Troubleshot Heroku start issues.
 - Split into Posts, Heroku and User working groups.
 - Important commands for heroku debugging:
-`heroku pg:reset --app hemo-acebook`
-`heroku run rake db:schema:load --app hemo-acebook`
-`heroku run rake db:migrate --app hemo-acebook`
+  `heroku pg:reset --app hemo-acebook`
+  `heroku run rake db:schema:load --app hemo-acebook`
+  `heroku run rake db:migrate --app hemo-acebook`
 
 ## 1 March 2021
+
 ### Morning
+
 - Kicked off the morning session with a GitHub merge to consolidate branches and prepare for the week's development.
 - Investigated circleci CI/CD framework
 
 ### Afternoon
+
 - Split into two groups. First one focused on setting up circleCI integration with our project. Currently running...
 - Second group focused on linking a post to a user. Updated schema and created addition db:migrate file for posts.
 
 ## 2 March 2021
+
 ### Morning
+
 - Discussed order of work prior to and after the sprint review later this morning.
 - Agreed prioritisation of tests (including confirmation of CircleCI configuration) for this morning's work, and CRUD/CSS functionality for the afternoon.
 
 ### Afternoon
+
 - Agreed that RSpec is not as big a priority as CRUD and CSS functionality for the initial demonstration.
 - Resolved to spend the afternoon working on prioritised development.
 - Agreed to work with Material Design Light.
+
+## 4 March 2021
+
+### Morning
+
+- Split into two teams to work on CI/CD and CRUDS
+
+### Afternoon
+
+- Split into two teams to work on CSS / fixing up pages and testing/CircleCI.
