@@ -6,9 +6,14 @@
   margin-top: 2rem;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-page-footer {
-  position: absolute;
-  bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+.image-wrapper {
+  margin-top: 4rem;
 }
